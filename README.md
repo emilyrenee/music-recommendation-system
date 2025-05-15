@@ -2,19 +2,29 @@
 
 A hybrid music recommendation system that blends collaborative filtering, content-based filtering, and popularity-based ranking to generate personalized playlists.
 
-## Notebook Versions
+## Course Submissions
 
-This project includes three versions that reflect both the original MIT coursework and continued development:
+This repository includes four submissions from my MIT program, showcasing different stages and areas of focus:
 
-- `mit_submissions/milestone_v1_mit_submission.html` — HTML export of the initial milestone submission for the MIT course. Run in a cloud environment and focuses on core model development.
-- `mit_submissions/final_v2_mit_submission.html` — HTML export of the final submission for the MIT course, including improved evaluation and presentation formatting.
-- `music_recommendation_system.ipynb` — The post-course, production-ready version with:
-  - FAISS-based content filtering
-  - Batch processing and checkpointing
-  - Docker support for reproducibility
-  - Modular hybrid logic
+- `mit_submissions/mit_capstone_rec_sys_milestone_submission.html` — Early milestone for the capstone recommendation system project, focusing on foundational collaborative filtering.
+- `mit_submissions/mit_capstone_rec_sys_final_submission.html` — Final capstone submission with refined hybrid recommender logic and evaluation.
+- `mit_submissions/mit_elective_rec_sys_submission.html` — Elective project exploring alternative recommendation approaches and evaluation strategies.
+- `mit_submissions/mit_eda_project_foodhub.html` — EDA-focused analysis of FoodHub order data, exploring customer behavior and delivery insights.
 
-These versions showcase the project’s evolution from academic prototype to scalable system.
+These notebooks demonstrate the progression of my work in recommender systems and applied data analysis across multiple course modules.
+
+## Current Working Notebook
+
+The actively developed version of this project is:
+
+- `notebooks/music_recommendation_system.ipynb` — A post-course, production-oriented notebook that builds on my MIT capstone work. It includes:
+  - FAISS-powered content-based filtering
+  - Modular hybrid recommendation logic
+  - Batch processing and checkpointing for scalability
+  - Dockerized environment for reproducibility
+
+This notebook reflects my continued growth and interest in recommender systems beyond the formal coursework, with a focus on performance, maintainability, and real-world use cases.
+
 
 
 ## Features
@@ -98,18 +108,23 @@ This will start a Jupyter notebook server at [http://localhost:8888](http://loca
   
 ## Project Structure
 
+## Project Structure
+
 ```
 music-rec-system/
 ├── notebooks/
 │   ├── mit_submissions/
-│   │   ├── milestone_v1_mit_submission.html   # Early checkpoint
-│   │   └── final_v2_mit_submission.html       # Final submission for the MIT course
-│   └── music_recommendation_system.ipynb       # Post-course enhanced version (Docker + FAISS + batch)
-├── data/                                       # Original data files (excluded from repo), FAISS indices, TF-IDF cache
-├── requirements.txt                            # Python dependencies
-├── .gitignore                                  # Excludes large files, data backups, and local artifacts
-└── docker-compose.yml                          # Containerized environment for consistent execution
+│   │   ├── mit_capstone_rec_sys_milestone_submission.html   # MIT capstone milestone submission
+│   │   ├── mit_capstone_rec_sys_final_submission.html       # Final MIT capstone recommender submission
+│   │   ├── mit_elective_rec_sys_submission.html             # Elective recommender system project
+│   │   └── mit_eda_project_foodhub.html                     # EDA project analyzing FoodHub order data
+│   └── music_recommendation_system.ipynb                    # Post-course version with FAISS, hybrid logic, Docker
+├── data/                                                    # Original data files (excluded), FAISS indices, TF-IDF cache
+├── requirements.txt                                         # Python dependencies
+├── .gitignore                                               # Excludes large files, local data, and backups
+└── docker-compose.yml                                       # Containerized environment for consistent execution
 ```
+
 
 
 ## Using Preprocessing
