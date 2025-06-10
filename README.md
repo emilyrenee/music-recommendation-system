@@ -13,6 +13,14 @@ This repository includes four submissions from my MIT program, showcasing differ
 
 These notebooks demonstrate the progression of my work in recommender systems and applied data analysis across multiple course modules.
 
+## Post Course Refinements
+
+This directory includes continued experiments and refinements beyond the original coursework. These notebooks extend the initial project with improved model performance, alternative architectures, and more modular pipelines.
+
+- Notebooks in this directory are not optimized for local Docker execution and were run in a cloud environment due to memory and processing constraints.
+- For example, the latest SVD-based model was developed and tested here after being initially discovered in the working notebook. It was then ported back cleanly for structured evaluation.
+
+
 ## Current Working Notebook
 
 The actively developed version of this project is:
@@ -123,26 +131,6 @@ music-rec-system/
 ├── requirements.txt                                         # Python dependencies
 ├── .gitignore                                               # Excludes large files, local data, and backups
 └── docker-compose.yml                                       # Containerized environment for consistent execution
-```
-
-
-
-## Using Preprocessing
-
-```python
-from preprocessing import load_and_preprocess_data
-
-# Process data with parallel clustering
-df_small_content, df_content = load_and_preprocess_data(
-    "data/song_data.csv",
-    n_jobs=-1  # Use all available cores
-)
-
-# Display the results
-print("\nContent DataFrame shape:", df_content.shape)
-print("\nSmall Content DataFrame shape:", df_small_content.shape)
-print("\nSample of preprocessed data:")
-display(df_small_content.head())
 ```
 
 ## Common Docker Commands
